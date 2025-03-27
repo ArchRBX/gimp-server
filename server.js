@@ -115,7 +115,7 @@ function scrubGroupData(roomId) {
     const data = {};
     for (let gimpName in group) {
         const gimpData = group[gimpName].scrubData(group[gimpName]);
-        data[gimpData];
+        data[gimpName] = gimpData;
     }
     return data;
 }
